@@ -4,7 +4,7 @@ export type Post = {
   description: string;
   slug: number;
   created_at: string;
-  Image: string;
+  image: string;
   userId: number;
   categoyId: number;
 };
@@ -14,4 +14,16 @@ export type Category = {
   slug: string;
   description: string;
   created_at: string;
+};
+
+export type PostWithCategory = {
+  id: number;
+  title: string;
+  description: string;
+  slug: number;
+  created_at: string;
+  image: string;
+  userId: number;
+  categoyId: number;
+  category: Category;
 };
